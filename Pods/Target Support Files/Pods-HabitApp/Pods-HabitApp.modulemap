@@ -1,0 +1,6 @@
+framework module Pods_HabitApp {
+  umbrella header "Pods-HabitApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
