@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		317F204E8B18CE4E61BD34E6 /* Pods_HabitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F17A48D746A0506E5FA85C /* Pods_HabitApp.framework */; };
 		D64C2F8E258F3A22004F9E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C2F8D258F3A22004F9E8C /* AppDelegate.swift */; };
 		D64C2F90258F3A22004F9E8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C2F8F258F3A22004F9E8C /* SceneDelegate.swift */; };
 		D64C2F92258F3A22004F9E8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C2F91258F3A22004F9E8C /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48F17A48D746A0506E5FA85C /* Pods_HabitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F2C0D0771E98FCD76C92D8 /* Pods-HabitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitApp.debug.xcconfig"; path = "Target Support Files/Pods-HabitApp/Pods-HabitApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D64C2F8A258F3A22004F9E8C /* HabitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64C2F8D258F3A22004F9E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D64C2F8F258F3A22004F9E8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		D64C2F96258F3A23004F9E8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D64C2F99258F3A23004F9E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D64C2F9B258F3A23004F9E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96BB7AB2729694C15AD421C /* Pods-HabitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitApp.release.xcconfig"; path = "Target Support Files/Pods-HabitApp/Pods-HabitApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317F204E8B18CE4E61BD34E6 /* Pods_HabitApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77146BA44742B7FFFEA8EB84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48F17A48D746A0506E5FA85C /* Pods_HabitApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D64C2F81258F3A22004F9E8C = {
 			isa = PBXGroup;
 			children = (
 				D64C2F8C258F3A22004F9E8C /* HabitApp */,
 				D64C2F8B258F3A22004F9E8C /* Products */,
+				FB2D947DD26C3BCF16C47B8D /* Pods */,
+				77146BA44742B7FFFEA8EB84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = HabitApp;
 			sourceTree = "<group>";
 		};
+		FB2D947DD26C3BCF16C47B8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8F2C0D0771E98FCD76C92D8 /* Pods-HabitApp.debug.xcconfig */,
+				E96BB7AB2729694C15AD421C /* Pods-HabitApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D64C2F9E258F3A23004F9E8C /* Build configuration list for PBXNativeTarget "HabitApp" */;
 			buildPhases = (
+				7EA1C77BF41DD079132AF9B0 /* [CP] Check Pods Manifest.lock */,
 				D64C2F86258F3A22004F9E8C /* Sources */,
 				D64C2F87258F3A22004F9E8C /* Frameworks */,
 				D64C2F88258F3A22004F9E8C /* Resources */,
+				EB40C05D5E847031E81C5939 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EA1C77BF41DD079132AF9B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HabitApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB40C05D5E847031E81C5939 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitApp/Pods-HabitApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitApp/Pods-HabitApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HabitApp/Pods-HabitApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D64C2F86258F3A22004F9E8C /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		D64C2F9F258F3A23004F9E8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F2C0D0771E98FCD76C92D8 /* Pods-HabitApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		D64C2FA0258F3A23004F9E8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96BB7AB2729694C15AD421C /* Pods-HabitApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
